@@ -46,7 +46,7 @@ export default function coursesList(props) {
       </View>
       <FlatList
         data={courses}
-        keyExtractor={(item) => item.id}
+        keyExtractor={(item) => item.id.toString()}
         renderItem={renderItem}
         horizontal
         showsHorizontalScrollIndicator={false}

@@ -49,7 +49,7 @@ export default function Slides(props) {
     <View style={styles.slides}>
       <FlatList
         data={courses}
-        keyExtractor={(item) => item.id}
+        keyExtractor={(item) => item.id.toString()}
         renderItem={renderItem}
         horizontal
         showsHorizontalScrollIndicator={false}
